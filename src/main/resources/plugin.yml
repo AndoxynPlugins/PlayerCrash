@@ -1,0 +1,5 @@
+name: ${project.name}
+main: net.daboross.bukkitdev.playercrash.PlayerCrash
+version: ${project.describe-version}
+author: Dabo Ross
+description: ${project.description}
