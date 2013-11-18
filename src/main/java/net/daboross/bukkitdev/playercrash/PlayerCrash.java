@@ -11,7 +11,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class PlayerCrash extends JavaPlugin {
-    // Command messages
 
     private static final String NO_ARGS = ChatColor.DARK_RED + "Please supply an argument.";
     private static final String TOO_MANY_ARGS = ChatColor.DARK_RED + "Too many arguments.";
@@ -24,7 +23,8 @@ public class PlayerCrash extends JavaPlugin {
         try {
             reflection = new PlayerCrashReflection();
         } catch (ClassNotFoundException | NoSuchMethodException | SecurityException | NoSuchFieldException ex) {
-            Logger.getLogger(PlayerCrash.class.getName()).log(Level.SEVERE, null, ex);
+            getLogger().log(Level.SEVERE, "Error starting reflection.", ex);
+            getServer().getPluginManager().disablePlugin(this);
         }
     }
 
