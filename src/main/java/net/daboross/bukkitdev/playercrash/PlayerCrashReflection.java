@@ -28,7 +28,7 @@ public class PlayerCrashReflection {
     private static final String CRAFT_PLAYER_CLASS = "org.bukkit.craftbukkit.v%s.entity.CraftPlayer";
     private static final String ENTITY_PLAYER_CLASS = "net.minecraft.server.v%s.EntityPlayer";
     private static final String ENTITY_LIVING_CLASS = "net.minecraft.server.v%s.EntityLiving";
-    private static final String PACKET_MOB_SPAWN_CLASS = "net.minecraft.server.v%s.Packet24MobSpawn";
+    private static final String PACKET_MOB_SPAWN_CLASS = "net.minecraft.server.v%s.PacketPlayOutSpawnEntityLiving";
     private static final String PLAYER_CONNECTION_CLASS = "net.minecraft.server.v%s.PlayerConnection";
     // Reflection method names
     private static final String CRAFT_PLAYER_GET_HANDLER_METHOD = "getHandle";
