@@ -35,7 +35,7 @@ public class PlayerCrashReflection {
     private static final String PLAYER_CONNECTION_SEND_PACKET_METHOD = "sendPacket";
     private static final String ENTITY_PLAYER_PLAYER_CONNECTION_FIELD = "playerConnection";
     // Minecraft version
-    private static final String MC_VERSION = "1_6_R3";
+    private static final String MC_VERSION = "1_7_R1";
     // Runtime classes / methods for reflection
     private final Class<?> craftPlayerClass;
     private final Class<?> entityPlayerClass;
